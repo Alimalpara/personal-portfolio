@@ -6,6 +6,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import github from "../assets/img/icons8-github.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -34,7 +35,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            {/* <img src={logo} alt="Logo" /> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -80,7 +81,7 @@ export const NavBar = () => {
                   <img src={navIcon1} alt="Linkedin" />
                 </a>
                 <a href="https://github.com/Alimalpara" target="_blank">
-                  <img src={navIcon2} alt="Github" />
+                  <img src={github} alt="Github" />
                 </a>
                 {/* <a href="#"><img src={navIcon3} alt="" /></a> */}
               </div>
